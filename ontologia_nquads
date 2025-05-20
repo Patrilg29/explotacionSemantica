@@ -1,0 +1,295 @@
+<http://um.es/data/synapticVesicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> <https://um.es/data/graph/synapticVesicle> .
+<http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/functionSupportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/functionSupportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://um.es/data/synapticVesicle/TipoEvidencia> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/functionSupportedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/RO_0002558> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasFunction> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/RO_0000085> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://um.es/data/synapticVesicle/partOf> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hasPart> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/BFO_0000051> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/interactsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/interactsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/interactsWith> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/RO_0002434> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/locatedIn> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/RO_0001025> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/partOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/BFO_0000050> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/length> <http://www.w3.org/2000/01/rdf-schema#domain> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/length> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/length> <http://www.w3.org/2000/01/rdf-schema#label> "Numero de aminoacidos" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/length> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.uniprot.org/core/length> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Ancestral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Ancestral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/TipoEvidencia> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Ancestral> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferido a partir del aspecto biol\u00F3gico del ancestro." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Ancestral> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia ancestral" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Ancestral> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0000318> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ComplejoProteico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ComplejoProteico> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ComplejoProteico> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.obolibrary.org/obo/GO_0065003" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ComplejoProteico> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de proteinas que llevan a cabo una determinada funcion. Tambien pueden incluir otras macromoleculas o cofactores." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ComplejoProteico> <http://www.w3.org/2000/01/rdf-schema#label> "Complejo proteico" <https://um.es/data/graph/synapticVesicle> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> <https://um.es/data/graph/synapticVesicle> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://um.es/data/synapticVesicle/hasPart> <https://um.es/data/graph/synapticVesicle> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Computacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Computacional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/TipoEvidencia> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Computacional> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferido por anotacion electronica." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Computacional> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia computacional" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Computacional> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0007669> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirecto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirecto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/Experimental> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirecto> <http://www.w3.org/2000/01/rdf-schema#comment> "Experimento que mide directamente la actividad o funcion de una molecula sin inferencias adicionales." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirecto> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo Directo" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirecto> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0000314> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/EnsayoDirecto> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensayo directo realizado a gran escala mediante tecnolog\u00EDas automatizadas para evaluar muchas muestras simult\u00E1neamente." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo directo de alto rendimiento" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0007005> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EstructuraCelular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EstructuraCelular> <http://www.w3.org/2000/01/rdf-schema#comment> "Componente estructural que forma parte de la organizacion interna de una celula." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EstructuraCelular> <http://www.w3.org/2000/01/rdf-schema#label> "Estructura Celular" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/EstructuraCelular> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/GO_0110165> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Experimental> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Experimental> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/TipoEvidencia> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Experimental> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferido a partir de experimentos o ensayos cientificos." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Experimental> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia experimental" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Experimental> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0000006> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/FuncionMolecular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/FuncionMolecular> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad bioquimica especifica que una molecula lleva a cabo a nivel molecular." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/FuncionMolecular> <http://www.w3.org/2000/01/rdf-schema#label> "Funcion Molecular" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/FuncionMolecular> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.obolibrary.org/obo/GO_0003674" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaPresinaptica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaPresinaptica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaPresinaptica> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte de la celula nerviosa que delimita el extremo del axion y participa en la liberacion de neurotransmisores hacia la sinapsis." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaPresinaptica> <http://www.w3.org/2000/01/rdf-schema#label> "Membrana Presinaptica" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaPresinaptica> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/GO_0042734> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.obolibrary.org/obo/GO_0030672" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte de la vesicula sinaptica que delimita su estructura y regula el transporte de moleculas hacia y desde su interior." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/MembranaVesicular> <http://www.w3.org/2000/01/rdf-schema#label> "Membrana Vesicular" <https://um.es/data/graph/synapticVesicle> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> <https://um.es/data/graph/synapticVesicle> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://um.es/data/synapticVesicle/partOf> <https://um.es/data/graph/synapticVesicle> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://um.es/data/synapticVesicle/VesiculaSinaptica> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/Computacional> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <http://www.w3.org/2000/01/rdf-schema#comment> <http://purl.obolibrary.org/obo/ECO_0000250> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <http://www.w3.org/2000/01/rdf-schema#comment> "Inferido por similitud de secuencia o estructura." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <http://www.w3.org/2000/01/rdf-schema#label> "Similitud de secuencia o estructura" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/TipoEvidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/TipoEvidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Categoria que describe la naturaleza de la evidencia que respalda una anotacion o afirmacion cientifica." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/TipoEvidencia> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de Evidencia" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/TipoEvidencia> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/ECO_0000000> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/2000/01/rdf-schema#comment> "Organulo membranoso en la terminal presinaptica que almacena y libera neurotransmisores durante la senalizacion sinaptica." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/2000/01/rdf-schema#label> "Vesicula Sinaptica" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VesiculaSinaptica> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.obolibrary.org/obo/GO_0008021" <https://um.es/data/graph/synapticVesicle> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> <https://um.es/data/graph/synapticVesicle> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://um.es/data/synapticVesicle/hasPart> <https://um.es/data/graph/synapticVesicle> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://um.es/data/synapticVesicle/MembranaVesicular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Proteina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Proteina> <http://www.w3.org/2000/01/rdf-schema#comment> "Macromolecula biologica compuesta por cadenas de aminoacidos." <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Proteina> <http://www.w3.org/2000/01/rdf-schema#label> "Proteina" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/Proteina> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.uniprot.org/core/Protein" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/unionProteinasDependienteCa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaPresinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://um.es/data/synapticVesicle/length> "206"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://www.w3.org/2000/01/rdf-schema#label> "SNAP25" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNAP25> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.uniprot.org/uniprot/P60880> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/ComplejoProteico> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/experimentalInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/fusionMembrana> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://www.w3.org/2000/01/rdf-schema#label> "SNARE" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SNARE> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0031201> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/unionQuinasas> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptofisina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://um.es/data/synapticVesicle/length> "742"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://www.w3.org/2000/01/rdf-schema#label> "SV2A" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/SV2A> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.uniprot.org/uniprot/Q7L0J3> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/ComplejoProteico> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/experimentalInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/bombaProtones> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptofisina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/VATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://www.w3.org/2000/01/rdf-schema#label> "Dominio V0 de V-ATPasa" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V0ATPasa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0000220> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/ComplejoProteico> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/experimentalInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/hidrolisisATP> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/VATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://www.w3.org/2000/01/rdf-schema#label> "Dominio V1 de V-ATPasa" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/V1ATPasa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0000221> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/ComplejoProteico> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/V0ATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/V1ATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://www.w3.org/2000/01/rdf-schema#label> "vacuolar proton-transporting V-type ATPase complex" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/VATPasa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0070072> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/almacenamientoNeurotransmisores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/almacenamientoNeurotransmisores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/almacenamientoNeurotransmisores> <http://www.w3.org/2000/01/rdf-schema#label> "Almacenamiento de neurotransmisores" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/almacenamientoNeurotransmisores> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0042137> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ancestralInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ancestralInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Ancestral> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ancestralInst> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia ancestral" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/bombaProtones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/bombaProtones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/bombaProtones> <http://www.w3.org/2000/01/rdf-schema#label> "Bomba de protones" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/bombaProtones> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_1902600> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EnsayoDirecto> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EnsayoDirectoAltoRendimiento> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Experimental> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo directo de alto rendimiento" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EnsayoDirecto> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Experimental> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/ensayoDirectoInst> <http://www.w3.org/2000/01/rdf-schema#label> "Ensayo directo" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/evidenciaComputacionalInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/evidenciaComputacionalInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Computacional> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/evidenciaComputacionalInst> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia computacional" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/experimentalInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/experimentalInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Experimental> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/experimentalInst> <http://www.w3.org/2000/01/rdf-schema#label> "Evidencia experimental" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/fusionMembrana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/fusionMembrana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/fusionMembrana> <http://www.w3.org/2000/01/rdf-schema#label> "Fusion de membranas" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/fusionMembrana> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0006906> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hidrolisisATP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hidrolisisATP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hidrolisisATP> <http://www.w3.org/2000/01/rdf-schema#label> "Hidrolisis de ATP" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/hidrolisisATP> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0016887> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/inhibidorCanalCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/inhibidorCanalCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/inhibidorCanalCa> <http://www.w3.org/2000/01/rdf-schema#label> "Inhibidor de canal de calcio" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/inhibidorCanalCa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0019855> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaPresinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaPresinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaPresinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/MembranaPresinaptica> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaPresinapticaInst> <http://www.w3.org/2000/01/rdf-schema#label> "Membrana presinaptica" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaVesicularInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaVesicularInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaVesicularInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/MembranaVesicular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaVesicularInst> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/membranaVesicularInst> <http://www.w3.org/2000/01/rdf-schema#label> "Membrana vesicular" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sensorCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sensorCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sensorCa> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor de iones de calcio" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sensorCa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0061891> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Computacional> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/SimilitudSecuenciaEstructura> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/similitudSecuenciaEstructuraInst> <http://www.w3.org/2000/01/rdf-schema#label> "Similitud de secuencia o estructura" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/ensayoDirectoAltoRendInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/unionCaderina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/SNAP25> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/SV2A> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/V0ATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptofisina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptotagmina1> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sintaxina1A> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://um.es/data/synapticVesicle/length> "198"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://www.w3.org/2000/01/rdf-schema#label> "Sinaptobrevina-2" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptobrevina2> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.uniprot.org/uniprot/O15498> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/ensayoDirectoInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/unionColesterol> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/SV2A> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/V0ATPasa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptotagmina1> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://um.es/data/synapticVesicle/length> "313"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://www.w3.org/2000/01/rdf-schema#label> "Sinaptofisina" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptofisina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.uniprot.org/uniprot/P08247> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/ancestralInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/sensorCa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptofisina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://um.es/data/synapticVesicle/length> "422"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://www.w3.org/2000/01/rdf-schema#label> "Sinaptotagmina-1" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sinaptotagmina1> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.uniprot.org/uniprot/P21579> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/Proteina> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/functionSupportedBy> <http://um.es/data/synapticVesicle/evidenciaComputacionalInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/inhibidorCanalCa> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/interactsWith> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/locatedIn> <http://um.es/data/synapticVesicle/membranaPresinapticaInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://um.es/data/synapticVesicle/length> "288"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://www.w3.org/2000/01/rdf-schema#label> "Sintaxina-1A" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/sintaxina1A> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.uniprot.org/uniprot/Q16623> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/ComplejoProteico> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/SNAP25> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/sinaptobrevina2> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/sintaxina1A> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://um.es/data/synapticVesicle/partOf> <http://um.es/data/synapticVesicle/SNARE> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://www.w3.org/2000/01/rdf-schema#label> "Complejo synaptobrevina-2, SNAP-25 y syntaxina-1A" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/synaptobrevin2SNAP25syntaxin1aComplex> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0070044> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionCaderina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionCaderina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionCaderina> <http://www.w3.org/2000/01/rdf-schema#label> "Union a caderina" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionCaderina> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0045296> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionColesterol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionColesterol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionColesterol> <http://www.w3.org/2000/01/rdf-schema#label> "Union a colesterol" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionColesterol> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0015485> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionProteinasDependienteCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionProteinasDependienteCa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionProteinasDependienteCa> <http://www.w3.org/2000/01/rdf-schema#label> "Union de proteinas dependiente de calcio" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionProteinasDependienteCa> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GO_0048306> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionQuinasas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionQuinasas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/FuncionMolecular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionQuinasas> <http://www.w3.org/2000/01/rdf-schema#label> <http://purl.obolibrary.org/obo/GO_0019901> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/unionQuinasas> <http://www.w3.org/2000/01/rdf-schema#label> "Union a proteinas quinasas" <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/EstructuraCelular> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://um.es/data/synapticVesicle/VesiculaSinaptica> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://um.es/data/synapticVesicle/hasFunction> <http://um.es/data/synapticVesicle/almacenamientoNeurotransmisores> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://um.es/data/synapticVesicle/hasPart> <http://um.es/data/synapticVesicle/membranaVesicularInst> <https://um.es/data/graph/synapticVesicle> .
+<http://um.es/data/synapticVesicle/vesiculaSinapticaInst> <http://www.w3.org/2000/01/rdf-schema#label> "Vesicula sinaptica" <https://um.es/data/graph/synapticVesicle> .
