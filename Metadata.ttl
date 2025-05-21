@@ -1,0 +1,32 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#> 
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX cc: <http://creativecommons.org/ns#>
+
+<https://um.es/graph/synapticVesicle> rdf:type dcat:Dataset ;
+                                    rdfs:label "Proteinas de las vesiculas sinapticas" ;
+                                    foaf:primaryTopic "Proteinas" ;
+                                    dct:License <http://creativecommons.org/licenses/MIT/> ;
+                                    dcat:distribution <https://um.es/data/nquadsSynapticVesicle> ;
+                                    dcat:distribution <https://um.es/data/sparqlSynapticVesicle> ;
+                                    sd:namedGraph <https://um.es/graph/synapticVesicle> .
+
+<https://um.es/data/nquadsSynapticVesicle> a dcat:Distribution ;
+  dcat:downloadURL <https://github.com/Patrilg29/explotacionSemantica/blob/main/ontologia_nquads.nq> ;
+  dct:license <http://creativecommons.org/licenses/by/3.0/es/> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> .
+
+<https://um.es/data/sparqlSynapticVesicle> a dcat:Distribution ;
+  dcat:accessURL <http://dayhoff.inf.um.es:3043/blazegraph/namespace/synapticVesicle/sparql> ;
+  dct:license <http://creativecommons.org/licenses/by/3.0/es/> .
+
+<http://creativecommons.org/licenses/MIT/>
+  a cc:License ;
+  cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+  cc:licenseClass <http://creativecommons.org/license/software> ;
+  cc:requires cc:Notice ;
+  cc:legalcode <http://opensource.org/licenses/mit-license.php> .
