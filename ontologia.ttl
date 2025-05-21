@@ -1,0 +1,495 @@
+@prefix : <https://um.es/data/> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO_> .
+@prefix up: <http://purl.uniprot.org/uniprot/> .
+@prefix eco: <http://purl.obolibrary.org/obo/ECO_> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <https://um.es/data/> .
+
+<https://um.es/data/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#equivalentProperty
+owl:equivalentProperty rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://um.es/data/functionSupportedBy
+:functionSupportedBy rdf:type owl:ObjectProperty ;
+                     rdfs:range :TipoEvidencia ;
+                     owl:equivalentProperty <http://purl.obolibrary.org/obo/RO_0002558> .
+
+
+###  https://um.es/data/hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:range :FuncionMolecular ;
+             owl:equivalentProperty <http://purl.obolibrary.org/obo/RO_0000085> .
+
+
+###  https://um.es/data/hasPart
+:hasPart rdf:type owl:ObjectProperty ;
+         owl:inverseOf :partOf ;
+         owl:equivalentProperty <http://purl.obolibrary.org/obo/BFO_0000051> .
+
+
+###  https://um.es/data/interactsWith
+:interactsWith rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ;
+               owl:equivalentProperty <http://purl.obolibrary.org/obo/RO_0002434> .
+
+
+###  https://um.es/data/locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:range :EstructuraCelular ;
+           owl:equivalentProperty <http://purl.obolibrary.org/obo/RO_0001025> .
+
+
+###  https://um.es/data/partOf
+:partOf rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://um.es/data/length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Proteina ;
+        rdfs:range xsd:nonNegativeInteger ;
+        rdfs:label "Numero de aminoacidos" ;
+        owl:equivalentProperty <http://purl.uniprot.org/core/length> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://um.es/data/Ancestral
+:Ancestral rdf:type owl:Class ;
+           rdfs:subClassOf :TipoEvidencia ;
+           rdfs:comment "Inferido a partir del aspecto biológico del ancestro." ;
+           rdfs:label "Evidencia ancestral" ;
+           owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0000318> .
+
+
+###  https://um.es/data/ComplejoProteico
+:ComplejoProteico rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPart ;
+                                        owl:someValuesFrom :Proteina
+                                      ] ;
+                  rdfs:comment "Conjunto de proteinas que llevan a cabo una determinada funcion. Tambien pueden incluir otras macromoleculas o cofactores." ;
+                  rdfs:label "Complejo proteico" ;
+                  owl:equivalentClass "http://purl.obolibrary.org/obo/GO_0065003" .
+
+
+###  https://um.es/data/Computacional
+:Computacional rdf:type owl:Class ;
+               rdfs:subClassOf :TipoEvidencia ;
+               rdfs:comment "Inferido por anotación electrónica." ;
+               rdfs:label "Evidencia computacional" ;
+               owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0007669> .
+
+
+###  https://um.es/data/EnsayoDirecto
+:EnsayoDirecto rdf:type owl:Class ;
+               rdfs:subClassOf :Experimental ;
+               rdfs:comment "Experimento que mide directamente la actividad o función de una molécula sin inferencias adicionales." ;
+               rdfs:label "Ensayo Directo" ;
+               owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0000314> .
+
+
+###  https://um.es/data/EnsayoDirectoAltoRendimiento
+:EnsayoDirectoAltoRendimiento rdf:type owl:Class ;
+                              rdfs:subClassOf :EnsayoDirecto ;
+                              rdfs:comment "Ensayo directo realizado a gran escala mediante tecnologías automatizadas para evaluar muchas muestras simultáneamente." ;
+                              rdfs:label "Ensayo directo de alto rendimiento" ;
+                              owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0007005> .
+
+
+###  https://um.es/data/EstructuraCelular
+:EstructuraCelular rdf:type owl:Class ;
+                   rdfs:comment "Componente estructural que forma parte de la organización interna de una célula." ;
+                   rdfs:label "Estructura Celular" ;
+                   owl:equivalentClass <http://purl.obolibrary.org/obo/GO_0110165> .
+
+
+###  https://um.es/data/Experimental
+:Experimental rdf:type owl:Class ;
+              rdfs:subClassOf :TipoEvidencia ;
+              rdfs:comment "Inferido a partir de experimentos o ensayos científicos." ;
+              rdfs:label "Evidencia experimental" ;
+              owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0000006> .
+
+
+###  https://um.es/data/FuncionMolecular
+:FuncionMolecular rdf:type owl:Class ;
+                  rdfs:comment "Actividad bioquímica específica que una molécula lleva a cabo a nivel molecular." ;
+                  rdfs:label "Funcion Molecular" ;
+                  owl:equivalentClass "http://purl.obolibrary.org/obo/GO_0003674" .
+
+
+###  https://um.es/data/MembranaPresinaptica
+:MembranaPresinaptica rdf:type owl:Class ;
+                      rdfs:subClassOf :EstructuraCelular ;
+                      rdfs:comment "Parte de la célula nerviosa que delimita el extremo del axón y participa en la liberación de neurotransmisores hacia la sinapsis." ;
+                      rdfs:label "Membrana Presinaptica" ;
+                      owl:equivalentClass <http://purl.obolibrary.org/obo/GO_0042734> .
+
+
+###  https://um.es/data/MembranaVesicular
+:MembranaVesicular rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :partOf ;
+                                         owl:allValuesFrom :VesiculaSinaptica
+                                       ] ;
+                   rdfs:subClassOf :EstructuraCelular ;
+                   rdfs:comment "Parte de la vesícula sináptica que delimita su estructura y regula el transporte de moléculas hacia y desde su interior." ;
+                   rdfs:label "Membrana Vesicular" ;
+                   owl:equivalentClass "http://purl.obolibrary.org/obo/GO_0030672" .
+
+
+###  https://um.es/data/Proteina
+:Proteina rdf:type owl:Class ;
+          rdfs:comment "Macromolécula biológica compuesta por cadenas de aminoácidos." ;
+          rdfs:label "Proteina" ;
+          owl:equivalentClass "http://purl.uniprot.org/core/Protein" .
+
+
+###  https://um.es/data/SimilitudSecuenciaEstructura
+:SimilitudSecuenciaEstructura rdf:type owl:Class ;
+                              rdfs:subClassOf :Computacional ;
+                              rdfs:comment <http://purl.obolibrary.org/obo/ECO_0000250> ,
+                                           "Inferido por similitud de secuencia o estructura." ;
+                              rdfs:label "Similitud de secuencia o estructura" .
+
+
+###  https://um.es/data/TipoEvidencia
+:TipoEvidencia rdf:type owl:Class ;
+               rdfs:comment "Categoría que describe la naturaleza de la evidencia que respalda una anotación o afirmación científica." ;
+               rdfs:label "Tipo de Evidencia" ;
+               owl:equivalentClass <http://purl.obolibrary.org/obo/ECO_0000000> .
+
+
+###  https://um.es/data/VesiculaSinaptica
+:VesiculaSinaptica rdf:type owl:Class ;
+                   rdfs:subClassOf :EstructuraCelular ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasPart ;
+                                     owl:someValuesFrom :MembranaVesicular
+                                   ] ;
+                   rdfs:comment "Orgánulo membranoso en la terminal presináptica que almacena y libera neurotransmisores durante la señalización sináptica." ;
+                   rdfs:label "Vesicula Sinaptica" ;
+                   owl:equivalentClass "http://purl.obolibrary.org/obo/GO_0008021" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://um.es/data/SNAP25
+:SNAP25 rdf:type owl:NamedIndividual ,
+                 :Proteina ;
+        :functionSupportedBy :similitudSecuenciaEstructuraInst ;
+        :hasFunction :unionProteinasDependienteCa ;
+        :interactsWith :sinaptobrevina2 ;
+        :locatedIn :membranaPresinapticaInst ;
+        :partOf :synaptobrevin2SNAP25syntaxin1aComplex ;
+        :length "206"^^xsd:nonNegativeInteger ;
+        rdfs:label "SNAP25" ;
+        owl:sameAs up:P60880 .
+
+
+###  https://um.es/data/SNARE
+:SNARE rdf:type owl:NamedIndividual ,
+                :ComplejoProteico ;
+       :functionSupportedBy :experimentalInst ;
+       :hasFunction :fusionMembrana ;
+       :hasPart :synaptobrevin2SNAP25syntaxin1aComplex ;
+       rdfs:label "SNARE" ;
+       owl:sameAs <http://purl.obolibrary.org/obo/GO_0031201> .
+
+
+###  https://um.es/data/SV2A
+:SV2A rdf:type owl:NamedIndividual ,
+               :Proteina ;
+      :functionSupportedBy :similitudSecuenciaEstructuraInst ;
+      :hasFunction :unionQuinasas ;
+      :interactsWith :sinaptobrevina2 ,
+                     :sinaptofisina ;
+      :locatedIn :membranaVesicularInst ,
+                 :vesiculaSinapticaInst ;
+      :length "742"^^xsd:nonNegativeInteger ;
+      rdfs:label "SV2A" ;
+      owl:sameAs up:Q7L0J3 .
+
+
+###  https://um.es/data/V0ATPasa
+:V0ATPasa rdf:type owl:NamedIndividual ,
+                   :ComplejoProteico ;
+          :functionSupportedBy :experimentalInst ;
+          :hasFunction :bombaProtones ;
+          :interactsWith :sinaptobrevina2 ,
+                         :sinaptofisina ;
+          :locatedIn :membranaVesicularInst ,
+                     :vesiculaSinapticaInst ;
+          :partOf :VATPasa ;
+          rdfs:label "Dominio V0 de V-ATPasa" ;
+          owl:sameAs <http://purl.obolibrary.org/obo/GO_0000220> .
+
+
+###  https://um.es/data/V1ATPasa
+:V1ATPasa rdf:type owl:NamedIndividual ,
+                   :ComplejoProteico ;
+          :functionSupportedBy :experimentalInst ;
+          :hasFunction :hidrolisisATP ;
+          :locatedIn :membranaVesicularInst ,
+                     :vesiculaSinapticaInst ;
+          :partOf :VATPasa ;
+          rdfs:label "Dominio V1 de V-ATPasa" ;
+          owl:sameAs <http://purl.obolibrary.org/obo/GO_0000221> .
+
+
+###  https://um.es/data/VATPasa
+:VATPasa rdf:type owl:NamedIndividual ,
+                  :ComplejoProteico ;
+         :hasPart :V0ATPasa ,
+                  :V1ATPasa ;
+         :locatedIn :membranaVesicularInst ,
+                    :vesiculaSinapticaInst ;
+         rdfs:label "vacuolar proton-transporting V-type ATPase complex" ;
+         owl:sameAs <http://purl.obolibrary.org/obo/GO_0070072> .
+
+
+###  https://um.es/data/almacenamientoNeurotransmisores
+:almacenamientoNeurotransmisores rdf:type owl:NamedIndividual ,
+                                          :FuncionMolecular ;
+                                 rdfs:label "Almacenamiento de neurotransmisores" ;
+                                 owl:sameAs <http://purl.obolibrary.org/obo/GO_0042137> .
+
+
+###  https://um.es/data/ancestralInst
+:ancestralInst rdf:type owl:NamedIndividual ,
+                        :Ancestral ;
+               rdfs:label "Evidencia ancestral" .
+
+
+###  https://um.es/data/bombaProtones
+:bombaProtones rdf:type owl:NamedIndividual ,
+                        :FuncionMolecular ;
+               rdfs:label "Bomba de protones" ;
+               owl:sameAs <http://purl.obolibrary.org/obo/GO_1902600> .
+
+
+###  https://um.es/data/ensayoDirectoAltoRendInst
+:ensayoDirectoAltoRendInst rdf:type owl:NamedIndividual ,
+                                    :EnsayoDirecto ,
+                                    :EnsayoDirectoAltoRendimiento ,
+                                    :Experimental ;
+                           rdfs:label "Ensayo directo de alto rendimiento" .
+
+
+###  https://um.es/data/ensayoDirectoInst
+:ensayoDirectoInst rdf:type owl:NamedIndividual ,
+                            :EnsayoDirecto ,
+                            :Experimental ;
+                   rdfs:label "Ensayo directo" .
+
+
+###  https://um.es/data/evidenciaComputacionalInst
+:evidenciaComputacionalInst rdf:type owl:NamedIndividual ,
+                                     :Computacional ;
+                            rdfs:label "Evidencia computacional" .
+
+
+###  https://um.es/data/experimentalInst
+:experimentalInst rdf:type owl:NamedIndividual ,
+                           :Experimental ;
+                  rdfs:label "Evidencia experimental" .
+
+
+###  https://um.es/data/fusionMembrana
+:fusionMembrana rdf:type owl:NamedIndividual ,
+                         :FuncionMolecular ;
+                rdfs:label "Fusion de membranas" ;
+                owl:sameAs <http://purl.obolibrary.org/obo/GO_0006906> .
+
+
+###  https://um.es/data/hidrolisisATP
+:hidrolisisATP rdf:type owl:NamedIndividual ,
+                        :FuncionMolecular ;
+               rdfs:label "Hidrolisis de ATP" ;
+               owl:sameAs <http://purl.obolibrary.org/obo/GO_0016887> .
+
+
+###  https://um.es/data/inhibidorCanalCa
+:inhibidorCanalCa rdf:type owl:NamedIndividual ,
+                           :FuncionMolecular ;
+                  rdfs:label "Inhibidor de canal de calcio" ;
+                  owl:sameAs <http://purl.obolibrary.org/obo/GO_0019855> .
+
+
+###  https://um.es/data/membranaPresinapticaInst
+:membranaPresinapticaInst rdf:type owl:NamedIndividual ,
+                                   :EstructuraCelular ,
+                                   :MembranaPresinaptica ;
+                          rdfs:label "Membrana presinaptica" .
+
+
+###  https://um.es/data/membranaVesicularInst
+:membranaVesicularInst rdf:type owl:NamedIndividual ,
+                                :EstructuraCelular ,
+                                :MembranaVesicular ;
+                       :partOf :vesiculaSinapticaInst ;
+                       rdfs:label "Membrana vesicular" .
+
+
+###  https://um.es/data/sensorCa
+:sensorCa rdf:type owl:NamedIndividual ,
+                   :FuncionMolecular ;
+          rdfs:label "Sensor de iones de calcio" ;
+          owl:sameAs <http://purl.obolibrary.org/obo/GO_0061891> .
+
+
+###  https://um.es/data/similitudSecuenciaEstructuraInst
+:similitudSecuenciaEstructuraInst rdf:type owl:NamedIndividual ,
+                                           :Computacional ,
+                                           :SimilitudSecuenciaEstructura ;
+                                  rdfs:label "Similitud de secuencia o estructura" .
+
+
+###  https://um.es/data/sinaptobrevina2
+:sinaptobrevina2 rdf:type owl:NamedIndividual ,
+                          :Proteina ;
+                 :functionSupportedBy :ensayoDirectoAltoRendInst ;
+                 :hasFunction :unionCaderina ;
+                 :interactsWith :SNAP25 ,
+                                :SV2A ,
+                                :V0ATPasa ,
+                                :sinaptofisina ,
+                                :sinaptotagmina1 ,
+                                :sintaxina1A ;
+                 :locatedIn :membranaVesicularInst ,
+                            :vesiculaSinapticaInst ;
+                 :partOf :synaptobrevin2SNAP25syntaxin1aComplex ;
+                 :length "198"^^xsd:nonNegativeInteger ;
+                 rdfs:label "Sinaptobrevina-2" ;
+                 skos:closeMatch up:O15498 .
+
+
+###  https://um.es/data/sinaptofisina
+:sinaptofisina rdf:type owl:NamedIndividual ,
+                        :Proteina ;
+               :functionSupportedBy :ensayoDirectoInst ;
+               :hasFunction :unionColesterol ;
+               :interactsWith :SV2A ,
+                              :V0ATPasa ,
+                              :sinaptobrevina2 ,
+                              :sinaptotagmina1 ;
+               :locatedIn :membranaVesicularInst ,
+                          :vesiculaSinapticaInst ;
+               :length "313"^^xsd:nonNegativeInteger ;
+               rdfs:label "Sinaptofisina" ;
+               owl:sameAs up:P08247 .
+
+
+###  https://um.es/data/sinaptotagmina1
+:sinaptotagmina1 rdf:type owl:NamedIndividual ,
+                          :Proteina ;
+                 :functionSupportedBy :ancestralInst ;
+                 :hasFunction :sensorCa ;
+                 :interactsWith :sinaptobrevina2 ,
+                                :sinaptofisina ;
+                 :locatedIn :membranaVesicularInst ,
+                            :vesiculaSinapticaInst ;
+                 :length "422"^^xsd:nonNegativeInteger ;
+                 rdfs:label "Sinaptotagmina-1" ;
+                 owl:sameAs up:P21579 .
+
+
+###  https://um.es/data/sintaxina1A
+:sintaxina1A rdf:type owl:NamedIndividual ,
+                      :Proteina ;
+             :functionSupportedBy :evidenciaComputacionalInst ;
+             :hasFunction :inhibidorCanalCa ;
+             :interactsWith :sinaptobrevina2 ;
+             :locatedIn :membranaPresinapticaInst ;
+             :partOf :synaptobrevin2SNAP25syntaxin1aComplex ;
+             :length "288"^^xsd:nonNegativeInteger ;
+             rdfs:label "Sintaxina-1A" ;
+             owl:sameAs up:Q16623 .
+
+
+###  https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex
+:synaptobrevin2SNAP25syntaxin1aComplex rdf:type owl:NamedIndividual ,
+                                                :ComplejoProteico ;
+                                       :hasPart :SNAP25 ,
+                                                :sinaptobrevina2 ,
+                                                :sintaxina1A ;
+                                       :partOf :SNARE ;
+                                       rdfs:label "Complejo synaptobrevina-2, SNAP-25 y syntaxina-1A" ;
+                                       owl:sameAs <http://purl.obolibrary.org/obo/GO_0070044> .
+
+
+###  https://um.es/data/unionCaderina
+:unionCaderina rdf:type owl:NamedIndividual ,
+                        :FuncionMolecular ;
+               rdfs:label "Union a caderina" ;
+               owl:sameAs <http://purl.obolibrary.org/obo/GO_0045296> .
+
+
+###  https://um.es/data/unionColesterol
+:unionColesterol rdf:type owl:NamedIndividual ,
+                          :FuncionMolecular ;
+                 rdfs:label "Union a colesterol" ;
+                 owl:sameAs <http://purl.obolibrary.org/obo/GO_0015485> .
+
+
+###  https://um.es/data/unionProteinasDependienteCa
+:unionProteinasDependienteCa rdf:type owl:NamedIndividual ,
+                                      :FuncionMolecular ;
+                             rdfs:label "Union de proteinas dependiente de calcio" ;
+                             owl:sameAs <http://purl.obolibrary.org/obo/GO_0048306> .
+
+
+###  https://um.es/data/unionQuinasas
+:unionQuinasas rdf:type owl:NamedIndividual ,
+                        :FuncionMolecular ;
+               rdfs:label "Union a proteinas quinasas" ;
+               owl:sameAs <http://purl.obolibrary.org/obo/GO_0019901> .
+
+
+###  https://um.es/data/vesiculaSinapticaInst
+:vesiculaSinapticaInst rdf:type owl:NamedIndividual ,
+                                :EstructuraCelular ,
+                                :VesiculaSinaptica ;
+                       :hasFunction :almacenamientoNeurotransmisores ;
+                       :hasPart :membranaVesicularInst ;
+                       rdfs:label "Vesicula sinaptica" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
