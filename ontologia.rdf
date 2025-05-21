@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="https://um.es/data/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <owl:Ontology rdf:about="https://um.es/data/">
+  </owl:Ontology>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+  </owl:AnnotationProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/functionSupportedBy">
+    <rdfs:range rdf:resource="https://um.es/data/TipoEvidencia"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002558"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/hasFunction">
+    <rdfs:range rdf:resource="https://um.es/data/FuncionMolecular"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/hasPart">
+    <owl:inverseOf rdf:resource="https://um.es/data/partOf"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/interactsWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002434"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/locatedIn">
+    <rdfs:range rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://um.es/data/partOf">
+    <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="https://um.es/data/length">
+    <rdfs:domain rdf:resource="https://um.es/data/Proteina"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:label>Numero de aminoacidos</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://purl.uniprot.org/core/length"/>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="https://um.es/data/Ancestral">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/TipoEvidencia"/>
+    <rdfs:comment>Inferido a partir del aspecto biológico del ancestro.</rdfs:comment>
+    <rdfs:label>Evidencia ancestral</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0000318"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/ComplejoProteico">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://um.es/data/hasPart"/>
+        <owl:someValuesFrom rdf:resource="https://um.es/data/Proteina"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>http://purl.obolibrary.org/obo/GO_0065003</owl:equivalentClass>
+    <rdfs:comment>Conjunto de proteinas que llevan a cabo una determinada funcion. Tambien pueden incluir otras macromoleculas o cofactores.</rdfs:comment>
+    <rdfs:label>Complejo proteico</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/Computacional">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/TipoEvidencia"/>
+    <rdfs:comment>Inferido por anotación electrónica.</rdfs:comment>
+    <rdfs:label>Evidencia computacional</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0007669"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/EnsayoDirecto">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/Experimental"/>
+    <rdfs:comment>Experimento que mide directamente la actividad o función de una molécula sin inferencias adicionales.</rdfs:comment>
+    <rdfs:label>Ensayo Directo</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0000314"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/EnsayoDirectoAltoRendimiento">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/EnsayoDirecto"/>
+    <rdfs:comment>Ensayo directo realizado a gran escala mediante tecnologías automatizadas para evaluar muchas muestras simultáneamente.</rdfs:comment>
+    <rdfs:label>Ensayo directo de alto rendimiento</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0007005"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/EstructuraCelular">
+    <rdfs:comment>Componente estructural que forma parte de la organización interna de una célula.</rdfs:comment>
+    <rdfs:label>Estructura Celular</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/Experimental">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/TipoEvidencia"/>
+    <rdfs:comment>Inferido a partir de experimentos o ensayos científicos.</rdfs:comment>
+    <rdfs:label>Evidencia experimental</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0000006"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/FuncionMolecular">
+    <rdfs:comment>Actividad bioquímica específica que una molécula lleva a cabo a nivel molecular.</rdfs:comment>
+    <rdfs:label>Funcion Molecular</rdfs:label>
+    <owl:equivalentClass>http://purl.obolibrary.org/obo/GO_0003674</owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/MembranaPresinaptica">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdfs:comment>Parte de la célula nerviosa que delimita el extremo del axón y participa en la liberación de neurotransmisores hacia la sinapsis.</rdfs:comment>
+    <rdfs:label>Membrana Presinaptica</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0042734"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/MembranaVesicular">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://um.es/data/partOf"/>
+        <owl:allValuesFrom rdf:resource="https://um.es/data/VesiculaSinaptica"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>http://purl.obolibrary.org/obo/GO_0030672</owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdfs:comment>Parte de la vesícula sináptica que delimita su estructura y regula el transporte de moléculas hacia y desde su interior.</rdfs:comment>
+    <rdfs:label>Membrana Vesicular</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/Proteina">
+    <rdfs:comment>Macromolécula biológica compuesta por cadenas de aminoácidos.</rdfs:comment>
+    <rdfs:label>Proteina</rdfs:label>
+    <owl:equivalentClass>http://purl.uniprot.org/core/Protein</owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/SimilitudSecuenciaEstructura">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/Computacional"/>
+    <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/ECO_0000250"/>
+    <rdfs:comment>Inferido por similitud de secuencia o estructura.</rdfs:comment>
+    <rdfs:label>Similitud de secuencia o estructura</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/TipoEvidencia">
+    <rdfs:comment>Categoría que describe la naturaleza de la evidencia que respalda una anotación o afirmación científica.</rdfs:comment>
+    <rdfs:label>Tipo de Evidencia</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://um.es/data/VesiculaSinaptica">
+    <rdfs:subClassOf rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://um.es/data/hasPart"/>
+        <owl:someValuesFrom rdf:resource="https://um.es/data/MembranaVesicular"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment>Orgánulo membranoso en la terminal presináptica que almacena y libera neurotransmisores durante la señalización sináptica.</rdfs:comment>
+    <rdfs:label>Vesicula Sinaptica</rdfs:label>
+    <owl:equivalentClass>http://purl.obolibrary.org/obo/GO_0008021</owl:equivalentClass>
+  </owl:Class>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/SNAP25">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/similitudSecuenciaEstructuraInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/unionProteinasDependienteCa">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Union de proteinas dependiente de calcio</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0048306"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaPresinapticaInst"/>
+    <ns0:partOf rdf:resource="https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">206</ns0:length>
+    <rdfs:label>SNAP25</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P60880"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/SNARE">
+    <rdf:type rdf:resource="https://um.es/data/ComplejoProteico"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/experimentalInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/fusionMembrana">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Fusion de membranas</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0006906"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:hasPart rdf:resource="https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex"/>
+    <rdfs:label>SNARE</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0031201"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/SV2A">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/similitudSecuenciaEstructuraInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/unionQuinasas">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Union a proteinas quinasas</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0019901"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptofisina"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">742</ns0:length>
+    <rdfs:label>SV2A</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q7L0J3"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/V0ATPasa">
+    <rdf:type rdf:resource="https://um.es/data/ComplejoProteico"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/experimentalInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/bombaProtones">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Bomba de protones</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_1902600"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptofisina"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:partOf rdf:resource="https://um.es/data/VATPasa"/>
+    <rdfs:label>Dominio V0 de V-ATPasa</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0000220"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/V1ATPasa">
+    <rdf:type rdf:resource="https://um.es/data/ComplejoProteico"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/experimentalInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/hidrolisisATP">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Hidrolisis de ATP</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0016887"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:partOf rdf:resource="https://um.es/data/VATPasa"/>
+    <rdfs:label>Dominio V1 de V-ATPasa</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0000221"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/VATPasa">
+    <rdf:type rdf:resource="https://um.es/data/ComplejoProteico"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/V0ATPasa"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/V1ATPasa"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <rdfs:label>vacuolar proton-transporting V-type ATPase complex</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0070072"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/almacenamientoNeurotransmisores">
+    <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+    <rdfs:label>Almacenamiento de neurotransmisores</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0042137"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/ancestralInst">
+    <rdf:type rdf:resource="https://um.es/data/Ancestral"/>
+    <rdfs:label>Evidencia ancestral</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/ensayoDirectoAltoRendInst">
+    <rdf:type rdf:resource="https://um.es/data/EnsayoDirecto"/>
+    <rdf:type rdf:resource="https://um.es/data/EnsayoDirectoAltoRendimiento"/>
+    <rdf:type rdf:resource="https://um.es/data/Experimental"/>
+    <rdfs:label>Ensayo directo de alto rendimiento</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/ensayoDirectoInst">
+    <rdf:type rdf:resource="https://um.es/data/EnsayoDirecto"/>
+    <rdf:type rdf:resource="https://um.es/data/Experimental"/>
+    <rdfs:label>Ensayo directo</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/evidenciaComputacionalInst">
+    <rdf:type rdf:resource="https://um.es/data/Computacional"/>
+    <rdfs:label>Evidencia computacional</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/experimentalInst">
+    <rdf:type rdf:resource="https://um.es/data/Experimental"/>
+    <rdfs:label>Evidencia experimental</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/inhibidorCanalCa">
+    <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+    <rdfs:label>Inhibidor de canal de calcio</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0019855"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/membranaPresinapticaInst">
+    <rdf:type rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdf:type rdf:resource="https://um.es/data/MembranaPresinaptica"/>
+    <rdfs:label>Membrana presinaptica</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/membranaVesicularInst">
+    <rdf:type rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdf:type rdf:resource="https://um.es/data/MembranaVesicular"/>
+    <ns0:partOf rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <rdfs:label>Membrana vesicular</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/sensorCa">
+    <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+    <rdfs:label>Sensor de iones de calcio</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0061891"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/similitudSecuenciaEstructuraInst">
+    <rdf:type rdf:resource="https://um.es/data/Computacional"/>
+    <rdf:type rdf:resource="https://um.es/data/SimilitudSecuenciaEstructura"/>
+    <rdfs:label>Similitud de secuencia o estructura</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/sinaptobrevina2">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/ensayoDirectoAltoRendInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/unionCaderina">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Union a caderina</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0045296"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:interactsWith rdf:resource="https://um.es/data/SNAP25"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/SV2A"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/V0ATPasa"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptofisina"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptotagmina1"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sintaxina1A"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:partOf rdf:resource="https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">198</ns0:length>
+    <rdfs:label>Sinaptobrevina-2</rdfs:label>
+    <skos:closeMatch rdf:resource="http://purl.uniprot.org/uniprot/O15498"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/sinaptofisina">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/ensayoDirectoInst"/>
+    <ns0:hasFunction>
+      <owl:NamedIndividual rdf:about="https://um.es/data/unionColesterol">
+        <rdf:type rdf:resource="https://um.es/data/FuncionMolecular"/>
+        <rdfs:label>Union a colesterol</rdfs:label>
+        <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0015485"/>
+      </owl:NamedIndividual>
+    </ns0:hasFunction>
+
+    <ns0:interactsWith rdf:resource="https://um.es/data/SV2A"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/V0ATPasa"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptotagmina1"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">313</ns0:length>
+    <rdfs:label>Sinaptofisina</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P08247"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/sinaptotagmina1">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/ancestralInst"/>
+    <ns0:hasFunction rdf:resource="https://um.es/data/sensorCa"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptofisina"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/vesiculaSinapticaInst"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">422</ns0:length>
+    <rdfs:label>Sinaptotagmina-1</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/P21579"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/sintaxina1A">
+    <rdf:type rdf:resource="https://um.es/data/Proteina"/>
+    <ns0:functionSupportedBy rdf:resource="https://um.es/data/evidenciaComputacionalInst"/>
+    <ns0:hasFunction rdf:resource="https://um.es/data/inhibidorCanalCa"/>
+    <ns0:interactsWith rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:locatedIn rdf:resource="https://um.es/data/membranaPresinapticaInst"/>
+    <ns0:partOf rdf:resource="https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex"/>
+    <ns0:length rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">288</ns0:length>
+    <rdfs:label>Sintaxina-1A</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.uniprot.org/uniprot/Q16623"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/synaptobrevin2SNAP25syntaxin1aComplex">
+    <rdf:type rdf:resource="https://um.es/data/ComplejoProteico"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/SNAP25"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/sinaptobrevina2"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/sintaxina1A"/>
+    <ns0:partOf rdf:resource="https://um.es/data/SNARE"/>
+    <rdfs:label>Complejo synaptobrevina-2, SNAP-25 y syntaxina-1A</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GO_0070044"/>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="https://um.es/data/vesiculaSinapticaInst">
+    <rdf:type rdf:resource="https://um.es/data/EstructuraCelular"/>
+    <rdf:type rdf:resource="https://um.es/data/VesiculaSinaptica"/>
+    <ns0:hasFunction rdf:resource="https://um.es/data/almacenamientoNeurotransmisores"/>
+    <ns0:hasPart rdf:resource="https://um.es/data/membranaVesicularInst"/>
+    <rdfs:label>Vesicula sinaptica</rdfs:label>
+  </owl:NamedIndividual>
+
+</rdf:RDF>
